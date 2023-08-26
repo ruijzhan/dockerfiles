@@ -1,7 +1,7 @@
 .PHONY: all docker-build docker-push arch clean
 
 CPU_ARCH := $(shell uname -m | sed -e 's/x86_64/amd64/' -e 's/aarch64/arm64/')
-KCP_VERSION := 20230214
+KCP_VERSION := 20230811
 IMAGE_NAME := ruijzhan/kcptun
 IMAGE_TAG := $(CPU_ARCH)
 

@@ -5,7 +5,7 @@
 CPU_ARCH := $(shell uname -m | sed -e 's/x86_64/amd64/' -e 's/aarch64/arm64/')
 
 # Set version numbers for various components used in Docker image
-KCP_VERSION := 20230214
+KCP_VERSION := 20230811
 SS_LIBEV_VERSION := v3.3.5
 V2RAY_PLUGIN_VERSION := v1.3.2
 
