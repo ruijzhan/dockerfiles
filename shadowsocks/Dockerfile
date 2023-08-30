@@ -18,12 +18,11 @@ ENV PLUGIN_OBFS_DOWNLOAD_URL https://github.com/shadowsocks/simple-obfs.git
 ENV PLUGIN_V2RAY_DOWNLOAD_URL https://github.com/shadowsocks/v2ray-plugin/releases/download/${V2RAY_PLUGIN_VERSION}/v2ray-plugin-linux-${ARCH}-${V2RAY_PLUGIN_VERSION}.tar.gz
 
 RUN apk upgrade \
-    && apk add bash tzdata rng-tools runit \
+    && apk add bash tzdata rng-tools runit curl \
     && apk add --virtual .build-deps \
         autoconf \
         automake \
         build-base \
-        curl \
         linux-headers \
         c-ares-dev \
         libev-dev \
